@@ -1,0 +1,23 @@
+.container {
+  @apply h-[100%] mt-2;
+}
+
+.title {
+  @apply flex items-center text-20-700-normal;
+}
+
+.tableProduct {
+  @apply h-[100%] mt-2;
+}
+
+.actionCell {
+  @apply flex gap-x-2;
+}
+
+.deleteButton {
+  @apply w-[80px] bg-primary-red-600  h-[31px] rounded-[5px] text-white;
+}
+
+.updateButton {
+  @apply w-[80px] bg-primary-blue-600  h-[31px] rounded-[5px] text-white;
+}

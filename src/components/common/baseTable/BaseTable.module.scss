@@ -1,0 +1,56 @@
+.baseTableComponent {
+  @apply relative w-full h-full flex-1 bg-white overflow-auto;
+}
+
+.tableContainer {
+  @apply w-full text-left table-auto;
+}
+
+.colTable {
+  @apply py-2 text-left text-12-400-normal text-primary-gray-500 font-inter sticky top-0 bg-white border-transparent;
+}
+
+.colTable::after {
+  @apply content-[""] absolute left-0 bottom-0 w-full border-b-[1px] border-b-primary-gray-300;
+}
+
+.colTableBody {
+  @apply py-[10px] text-12-400-normal text-primary-zinc-900 break-words whitespace-normal;
+}
+
+.noDataAvailable {
+  @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
+}
+
+.cellContainer {
+  @apply flex items-center text-primary-gray-900 text-12-400-normal;
+}
+
+// Custom Table Primary
+.baseTableComponent.colorTable {
+  @apply overflow-y-scroll;
+}
+
+.thead.colorTable {
+  @apply border-b-0;
+}
+
+.colTable.colorTable {
+  @apply py-4 pl-8 border-0 text-left text-14-400-normal text-primary-gray-600 bg-none font-inter sticky top-0;
+}
+
+.colTable.colorTable::after {
+  @apply content-[""] absolute h-full border-0 bg-primary-gray-300 bg-opacity-[35%] px-0;
+}
+
+.colTable.colorTable:first-child::after {
+  @apply rounded-tl-[5px];
+}
+
+.colTable.colorTable:last-child::after {
+  @apply rounded-tr-[5px];
+}
+
+.colTableBody.colorTable {
+  @apply py-[12px] text-12-400-normal text-primary-zinc-900 border-b bg-primary-gray-300 bg-opacity-[10%] break-words whitespace-normal truncate pr-2;
+}

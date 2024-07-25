@@ -1,0 +1,11 @@
+.main_layout {
+  height: 100vh;
+  position: relative;
+
+  .login_form {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
