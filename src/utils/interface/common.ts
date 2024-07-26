@@ -19,3 +19,11 @@ export interface ColumnTableType<T> {
   width?: number | string;
   render?: (value: T[keyof T], record: T, index: number) => React.ReactNode;
 }
+
+export interface IUserProfile {
+  id: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  avatarUrl: string;
+}

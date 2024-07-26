@@ -1,0 +1,86 @@
+.navTabContainer {
+  @apply flex-1 h-auto relative after:content-[''] after:absolute after:h-[1px] after:w-full after:bg-primary-gray-300 after:left-0 after:bottom-0;
+}
+
+// Nav link
+.navLink {
+  @apply inline-flex items-center px-3 pb-[11px];
+}
+
+.navLinkActive {
+  @apply relative z-[1] border-b border-primary-green-600;
+}
+
+.textStyle {
+  @apply text-12-400-normal text-primary-gray-500;
+}
+
+.textStyleActive {
+  @apply text-12-500-normal text-primary-green-600;
+}
+
+.numberItem {
+  @apply flex items-center justify-center w-5 h-5 rounded-full ml-2 bg-primary-gray-300 text-10-400-normal text-primary-gray-900;
+}
+
+// START: CustomStyle tabValue
+.navLink.tabValue {
+  @apply pr-[5px];
+}
+
+.navLinkActive.tabValue {
+  @apply border-b-[2px];
+}
+
+.textStyle.tabValue {
+  @apply text-14-400-normal text-primary-gray-500;
+}
+
+.textStyleActive.tabValue {
+  @apply text-primary-gray-500;
+}
+// END: CustomStyle tabValue
+
+// START: CustomStyle nav
+.navTabContainer.nav {
+  @apply after:content-none;
+}
+
+.navLink.nav {
+  @apply px-4 pb-[7px] pt-3;
+}
+
+.navLinkActive.nav {
+  @apply border-b-4 bg-primary-green-600/10;
+}
+
+.textStyle.nav {
+  @apply text-14-500-normal text-primary-gray-900;
+}
+
+.textStyleActive.nav {
+  @apply text-primary-green-600;
+}
+// END: CustomStyle nav
+
+// START: CustomStyle patient
+.navTabContainer.tabPatient {
+  @apply after:h-0 space-x-8;
+}
+
+.navLink.tabPatient {
+  @apply px-0 pb-0 pt-0;
+}
+
+.navLinkActive.tabPatient {
+  @apply text-primary-gray-900 border-none;
+}
+
+.textStyle.tabPatient {
+  @apply text-primary-gray-900/40 text-17-600-normal;
+}
+
+.textStyleActive.tabPatient {
+  @apply text-primary-gray-900 text-17-600-normal;
+}
+// END: CustomStyle patient
