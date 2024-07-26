@@ -14,4 +14,4 @@ export const urlApiProduct = {
   getList: 'products',
 };
 
-// export const;
+export const EMPTY_STRING = '';

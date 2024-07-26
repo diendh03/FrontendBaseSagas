@@ -1,0 +1,19 @@
+.headerWrap {
+  @apply flex justify-between items-center px-12 w-full min-h-[92px] bg-white border-b-primary-gray-300 border-b-[1px] sticky top-0 z-10;
+}
+
+.headerContent {
+  @apply w-[100%] flex justify-center items-center gap-x-[40px];
+}
+
+.headerRight {
+  @apply flex-1 flex justify-end items-center gap-[49px];
+}
+
+.headerInfo {
+  @apply relative;
+}
+
+.headerInfo::before {
+  @apply content-[''] absolute -left-6 top-1/2 -translate-y-1/2 w-[1px] h-[36px] bg-primary-gray-500 bg-opacity-50;
+}

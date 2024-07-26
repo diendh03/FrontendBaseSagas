@@ -113,8 +113,8 @@ const Home = (props: Props) => {
       render: (_, record: IProductResp) => {
         return (
           <div className={cx('actionCell')}>
-            <button className={cx('deleteButton')}>Xóa</button>
-            <button className={cx('updateButton')}>Update</button>
+            <button className={cx('deleteButton')}>{t('common_btn_delete')}</button>
+            <button className={cx('updateButton')}>{t('common_btn_update')}</button>
           </div>
         );
       },
@@ -124,8 +124,8 @@ const Home = (props: Props) => {
   return (
     <div className={cx('container')}>
       <div className={cx('title')}>
-        <div className='col-md-6'>
-          <p className='fs-1'>{t('Danh sách sản phẩm')}</p>
+        <div>
+          <p>{t('Danh sách sản phẩm')}</p>
         </div>
       </div>
       <div className={cx('tableProduct')}>

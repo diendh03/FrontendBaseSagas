@@ -5,6 +5,7 @@ import Header from './header/Header';
 import Sidebar from './sidebar/Sidebar';
 import { RolesEnum } from '~/utils/enum';
 import { Outlet } from 'react-router-dom';
+import { privateRoutes } from '~/utils/constants/route';
 
 type Props = {
   children?: ReactNode;
@@ -15,16 +16,16 @@ const cx = classNames.bind(styles);
 
 const Main = (props: Props) => {
   return (
-    <div className={cx('mainContainer')}>
-      <div className={cx('sidebarContainer')}>
-        <Sidebar />
+    <div id='mainVerticalLayout' className={cx('mainVerticalLayoutContainer')}>
+      <div className={cx('mainVerticalLayoutHeader')}>
+        <Header routes={privateRoutes} />
       </div>
 
-      <div className={cx('primaryContent')}>
-        <Header />
-
-        <div className={cx('content')}>
-          <Outlet />
+      <div className={cx('mainVerticalLayoutBody')}>
+        <div className={cx('mainVerticalBodyContainer')}>
+          <div className={cx('mainVerticalBodyContent')}>
+            <Outlet />
+          </div>
         </div>
       </div>
     </div>

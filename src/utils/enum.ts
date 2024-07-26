@@ -23,3 +23,14 @@ export enum LanguageEnum {
 export enum BaseTableEnum {
   COLOR_TABLE = 'colorTable',
 }
+
+export enum NavTabTypeEnum {
+  NAV = 'nav',
+  TAB_VALUE = 'tabValue',
+  TAB_PATIENT = 'tabPatient',
+}
+
+export enum UserMenuNameTransKeyEnum {
+  HOME = 'user_menu_home',
+  ABOUT = 'user_menu_about',
+}

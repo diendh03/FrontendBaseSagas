@@ -1,0 +1,31 @@
+.headerAvatarDropdown {
+  @apply relative;
+}
+
+.headerAvatarWrap {
+  @apply flex justify-center items-center space-x-2 cursor-pointer;
+}
+
+.headerAvatarImg {
+  @apply w-10;
+}
+
+.headerAvatar {
+  @apply max-w-10 w-10 h-10 rounded-full object-cover;
+}
+
+.headerName {
+  @apply text-14-400-normal text-primary-gray-900;
+}
+
+.headerAvatarOption {
+  @apply p-2 w-full min-w-[191px] absolute top-[calc(100%+2px)] right-[-14px] z-10 bg-white rounded-[5px] shadow-[0_0_4px_2px_rgba(0,0,0,0.12)] cursor-pointer;
+}
+
+.headerOptionText {
+  @apply block w-full p-2 text-14-500-normal text-primary-gray-900 font-semibold text-left;
+}
+
+.headerDropdown {
+  @apply max-w-none;
+}

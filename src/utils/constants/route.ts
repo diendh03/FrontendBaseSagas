@@ -1,7 +1,8 @@
 import { NotFoundPage } from '~/components/common';
 import { FreeLayout } from '~/layouts';
-import { Home, LoginAdmin, LoginUser } from '~/pages';
+import { About, Home, LoginAdmin, LoginUser } from '~/pages';
 import { IRouteModel } from '../interface/common';
+import { UserMenuNameTransKeyEnum } from '../enum';
 
 // Router && Path
 export const adminRoute = {
@@ -12,7 +13,7 @@ export const adminRoute = {
 export const userRoute = {
   base: '/',
   login: '/login',
-  home: '/home',
+  home: 'home',
   about: '/about',
 };
 
@@ -54,10 +55,11 @@ export const privateRoutes: IRouteModel[] = [
     index: true,
     path: `${userRoute.base}`,
     component: Home,
+    name: UserMenuNameTransKeyEnum.HOME,
   },
   {
-    index: true,
-    path: `${userRoute.base}${userRoute.home}`,
-    component: Home,
+    path: `${userRoute.about}`,
+    component: About,
+    name: UserMenuNameTransKeyEnum.ABOUT,
   },
 ];

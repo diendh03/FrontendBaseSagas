@@ -1,9 +1,9 @@
 .container {
-  @apply h-[100%] mt-2;
+  @apply h-[100%] mt-2 mx-2;
 }
 
 .title {
-  @apply flex items-center text-20-700-normal;
+  @apply flex items-center text-20-700-normal text-primary-zinc-900 font-sfProDisplay;
 }
 
 .tableProduct {
